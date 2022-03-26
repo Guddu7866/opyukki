@@ -107,7 +107,7 @@ async def quality_markup(_, CallbackQuery):
     )
 
 
-@app.on_callback_query(filters.regex(pattern=r"LiveStream"))
+@app.on_callback_query(filters.regex(pattern=r"LiveStreamm"))
 async def Live_Videos_Stream(_, CallbackQuery):
     limit = await get_video_limit(141414)
     if not limit:
@@ -158,7 +158,7 @@ async def Live_Videos_Stream(_, CallbackQuery):
     )
 
 
-@app.on_callback_query(filters.regex(pattern=r"VideoStream"))
+@app.on_callback_query(filters.regex(pattern=r"VideoStreamm"))
 async def Videos_Stream(_, CallbackQuery):
     if CallbackQuery.message.chat.id not in db_mem:
         db_mem[CallbackQuery.message.chat.id] = {}
