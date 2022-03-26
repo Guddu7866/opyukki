@@ -295,7 +295,7 @@ Total Left: `{hours}`**h**  `{minutes}`**m**  [`{percentage}`**%**]"""
     return await dyno.edit(text)
 
 
-@app.on_message(filters.command("update") & filters.user(SUDOERS))
+@app.on_message(filters.command("updatee") & filters.user(SUDOERS))
 async def update_(client, message):
     if await is_heroku():
         if HEROKU_API_KEY == "" and HEROKU_APP_NAME == "":
@@ -371,7 +371,7 @@ async def update_(client, message):
     return
 
 
-@app.on_message(filters.command("restart") & filters.user(SUDOERS))
+@app.on_message(filters.command("restartt") & filters.user(SUDOERS))
 async def restart_(_, message):
     response = await message.reply_text("Restarting....")
     if await is_heroku():
