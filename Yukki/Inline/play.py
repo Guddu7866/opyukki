@@ -34,22 +34,7 @@ def url_markup(videoid, duration, user_id, query, query_type):
                 callback_data=f"forceclose {query}|{user_id}",
             ),
         ],
-        [
-            InlineKeyboardButton(
-                text="Updates",
-                url=f"t.me/ABOUTVEDMAT",
-            ),
-            InlineKeyboardButton(
-                text="Support",
-                url=f"t.me/LOVELYAPPEAL",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="Kidnap me",
-                url=f"t.me/{BOT_USERNAME}?startgroup=true",
-            ),
-        ],
+       
     ]
     return buttons
 
@@ -192,23 +177,7 @@ def secondary_markup(videoid, user_id):
                 text="🔗 More Menu", callback_data=f"other {videoid}|{user_id}"
             ),
             InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"close"),
-        ],
-        [
-            InlineKeyboardButton(
-                text="Updates",
-                url=f"t.me/ABOUTVEDMAT",
-            ),
-            InlineKeyboardButton(
-                text="Support",
-                url=f"t.me/LOVELYAPPEAL",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="Kidnap me",
-                url=f"t.me/{BOT_USERNAME}?startgroup=true",
-            ),
-        ],
+        ],        
     ]
     return buttons
 
@@ -222,23 +191,7 @@ def secondary_markup2(videoid, user_id):
         ],
         [
             InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"close"),
-        ],
-        [
-            InlineKeyboardButton(
-                text="Updates",
-                url=f"t.me/ABOUTVEDMAT",
-            ),
-            InlineKeyboardButton(
-                text="Support",
-                url=f"t.me/LOVELYAPPEAL",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="Kidnap me",
-                url=f"t.me/{BOT_USERNAME}?startgroup=true",
-            ),
-        ],
+        ],        
     ]
     return buttons
 
@@ -267,22 +220,6 @@ def primary_markup(videoid, user_id, current_time, total_time):
             ),
             InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"close"),
         ],
-        [
-            InlineKeyboardButton(
-                text="Updates",
-                url=f"t.me/ABOUTVEDMAT",
-            ),
-            InlineKeyboardButton(
-                text="Support",
-                url=f"t.me/LOVELYAPPEAL",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="Kidnap me",
-                url=f"t.me/{BOT_USERNAME}?startgroup=true",
-            ),
-        ],
     ]
     return buttons
 
@@ -307,22 +244,6 @@ def timer_markup(videoid, user_id, current_time, total_time):
             ),
             InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"close"),
         ],
-        [
-            InlineKeyboardButton(
-                text="Updates",
-                url=f"t.me/ABOUTVEDMAT",
-            ),
-            InlineKeyboardButton(
-                text="Support",
-                url=f"t.me/LOVELYAPPEAL",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="Kidnap me",
-                url=f"t.me/{BOT_USERNAME}?startgroup=true",
-            ),
-        ],
     ]
     return buttons
 
@@ -345,22 +266,6 @@ def audio_markup(videoid, user_id, current_time, total_time):
             InlineKeyboardButton(text="⏹️", callback_data=f"stopcb"),
         ],
         [InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"close")],
-        [
-            InlineKeyboardButton(
-                text="Updates",
-                url=f"t.me/ABOUTVEDMAT",
-            ),
-            InlineKeyboardButton(
-                text="Support",
-                url=f"t.me/LOVELYAPPEAL",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="Kidnap me",
-                url=f"t.me/{BOT_USERNAME}?startgroup=true",
-            ),
-        ],
     ]
     return buttons
 
@@ -380,22 +285,6 @@ def audio_timer_markup_start(videoid, user_id, current_time, total_time):
             InlineKeyboardButton(text="⏹️", callback_data=f"stopcb"),
         ],
         [InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"close")],
-        [
-            InlineKeyboardButton(
-                text="Updates",
-                url=f"t.me/ABOUTVEDMAT",
-            ),
-            InlineKeyboardButton(
-                text="Support",
-                url=f"t.me/LOVELYAPPEAL",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="Kidnap me",
-                url=f"t.me/{BOT_USERNAME}?startgroup=true",
-            ),
-        ],
     ]
     return buttons
 
@@ -409,21 +298,5 @@ audio_markup2 = InlineKeyboardMarkup(
             InlineKeyboardButton(text="⏹️", callback_data=f"stopcb"),
         ],
         [InlineKeyboardButton("🗑 Close Menu", callback_data="close")],
-        [
-            InlineKeyboardButton(
-                text="Updates",
-                url=f"t.me/ABOUTVEDMAT",
-            ),
-            InlineKeyboardButton(
-                text="Support",
-                url=f"t.me/LOVELYAPPEAL",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="Kidnap me",
-                url=f"t.me/{BOT_USERNAME}?startgroup=true",
-            ),
-        ],
     ]
 )
