@@ -20,7 +20,7 @@ Inline button of Lyrics has some bugs. Searches only 50% results. You can use co
 """
 
 
-@app.on_callback_query(filters.regex(pattern=r"lyrics"))
+@app.on_callback_query(filters.regex(pattern=r"lyricss"))
 async def lyricssex(_, CallbackQuery):
     callback_data = CallbackQuery.data.strip()
     callback_request = callback_data.split(None, 1)[1]
@@ -78,7 +78,7 @@ async def lyricssex(_, CallbackQuery):
         await CallbackQuery.message.reply_text(xxx)
 
 
-@app.on_message(filters.command("lyrics"))
+@app.on_message(filters.command("lyricss"))
 async def lrsearch(_, message: Message):
     if len(message.command) < 2:
         return await message.reply_text("**Usage:**\n\n/lyrics [ Music Name]")
