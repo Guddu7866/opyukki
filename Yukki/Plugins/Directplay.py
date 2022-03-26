@@ -30,7 +30,7 @@ from Yukki.Utilities.videostream import start_stream_video
 from Yukki.Utilities.youtube import (get_yt_info_id, get_yt_info_query,
                                      get_yt_info_query_slider)
 
-from Yukki.Plugins.custom.func import mplay_stream, vplay_stream
+from Yukki.Plugins.Mplay import mplay_stream, vplay_stream
 
 @app.on_message(
     filters.command(["play", f"play@{BOT_USERNAME}"]) & filters.group
