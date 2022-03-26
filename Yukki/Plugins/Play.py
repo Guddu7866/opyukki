@@ -194,7 +194,7 @@ async def play(_, message: Message):
         )
 
 
-@app.on_callback_query(filters.regex(pattern=r"MusicStream"))
+@app.on_callback_query(filters.regex(pattern=r"MusicStreamm"))
 async def Music_Stream(_, CallbackQuery):
     if CallbackQuery.message.chat.id not in db_mem:
         db_mem[CallbackQuery.message.chat.id] = {}
@@ -255,7 +255,7 @@ async def Music_Stream(_, CallbackQuery):
     )
 
 
-@app.on_callback_query(filters.regex(pattern=r"Search"))
+@app.on_callback_query(filters.regex(pattern=r"Searchh"))
 async def search_query_more(_, CallbackQuery):
     callback_data = CallbackQuery.data.strip()
     callback_request = callback_data.split(None, 1)[1]
